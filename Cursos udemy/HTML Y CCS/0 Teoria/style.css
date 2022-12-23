@@ -1,0 +1,34 @@
+
+/*h1 {*/
+/*  color: #ff6747;*/
+/*}*/
+/*p {*/
+/*  color: #ff6747;*/
+/*}*/
+body {
+  background-color: #ff6747;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  color: #40ff00;
+}
+
+.sdo_div{
+  color: brown;
+  }
+.new_div{
+  background: blueviolet;
+  height: 300px;
+  padding: 100px ;
+  }
+
+.new_div2 {
+  background: black;
+  height: 100px;
+  width: 100px;
+  }
+p span {
+  color: black;
+  }

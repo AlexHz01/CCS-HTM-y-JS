@@ -1,0 +1,41 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Lucida Sans", "Noto Sans", sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    display: flex;
+    background-color: #75d066;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 12px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+}
+nav a:hover{
+    color: #ff6747;
+}
+
+@media (max-width: 680px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav{
+        padding: 10px;
+    }
+}
