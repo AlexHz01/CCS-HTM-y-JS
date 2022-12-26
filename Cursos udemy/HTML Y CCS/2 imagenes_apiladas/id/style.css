@@ -1,0 +1,21 @@
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #ff6747;
+    color: aliceblue;
+}
+
+#cuatro {
+    /*position: absolute;*/
+    background: #75d066;
+    top: 20px;
+    left: 20px;
+}
+
+#dos {
+    position: relative;
+    background: #66c0d0;
+    top: 20px;
+    left: 20px;
+}
