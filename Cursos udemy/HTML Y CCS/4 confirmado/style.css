@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    background: rgba(24, 139, 196, 0.82);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.contenedor .subcontenedor {
+    width: 600px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor .subcontenedor .contenido {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 15px 15px ;
+    flex: auto;
+}
+.contenedor .subcontenedor .contenido .ico {
+    margin-right: 10px;
+}
+.contenedor .subcontenedor .contenido .mensaj .title {
+    font-weight: bolder;
+}
+
+.contenedor .subcontenedor .actions {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.contenedor .subcontenedor .actions button {
+    background-color: #020202;
+    border: none;
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contenedor .subcontenedor .actions .btndescargar {
+    background-color: #7cb6c4;
+    color: #fff;
+}
+.contenedor .subcontenedor .actions .btnvolver {
+    background-color: #c3ccd2;
+    color: #fff;
+}
+.contenedor .subcontenedor .actions .btndescargar:hover {
+    background-color: #0b5364;
+    border: solid 1px #0b5364;
+}
+.contenedor .subcontenedor .actions .btnvolver:hover {
+    background-color: #282525;
+    border: solid 1px #0b5364;
+}
+
+@media (max-width: 600px) {
+    .contenedor .subcontenedor {
+        width: 80%;
+    }
+    .contenedor .subcontenedor .actions {
+        flex-direction: column;
+    }
+}
