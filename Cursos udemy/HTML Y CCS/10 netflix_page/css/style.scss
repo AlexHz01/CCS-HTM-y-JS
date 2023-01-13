@@ -1,0 +1,288 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #000;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100;
+    .logo img{
+        max-width: 150px;
+    }
+
+    .navigation{
+        display: flex;
+        li{
+            list-style:none;
+            margin: 0 10px;
+            a{
+                color: #fff;
+                text-decoration: none;
+                letter-spacing: 1px;
+                font-weight: 500;
+                transition: all 0.3s ease;
+                &:hover {
+                    color: #ff0000;
+                }
+            }
+        }
+    
+    }
+    .search{
+        position: relative;
+        width: 300px;
+        height: 40px;
+        input{
+            position: absolute;
+            background: transparent;
+            text-align: left;
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            padding: 0 10px 0 45px;
+            width: 200px;
+            height: 30px;
+            backdrop-filter: blur(3px);
+
+            outline: none;
+            transition: all 0.3s ease;
+            &::placeholder{
+                color: #fff;
+            }
+            &:focus{
+                width: 300px;
+                border-color: #ff0000;
+            }
+        }
+        .btn{
+            color: #e4e4e4;
+            border: none;
+            position: relative;
+            top: 0%;
+            background: transparent;
+            left: 2%;
+            
+        }
+        
+
+    }
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sombraImg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, black 20%, transparent);
+    }
+}
+.banner .content{
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    .movietitle{
+        max-width: 250px;
+    }
+    h4{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        span{
+            padding:0 10px;
+            border-right: 1px solid rgba($color: #e4e4e4, $alpha: 1.0);
+            &:first-child{
+                border-left: 1px solid rgba($color: #e4e4e4, $alpha: 1.0);
+            }
+            i{
+                background: #de0611;
+                color: #fff;
+                padding: 0 8px;
+                border-radius: 5px;
+                font-style: normal;
+            }
+        }
+    }
+    p{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-align: justify;
+    }	 
+}
+
+.buttons{
+    position: relative;
+    a{
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        background: #de0611;
+        color: #e4e4e4;
+        padding: 6px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        &:nth-child(2){
+            background: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+    }
+}
+
+.play{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #e4e4e4;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    img{
+        margin-right: 10px;
+        max-width: 40px;
+    }
+}
+
+.trailer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+    }
+    video{
+        max-width: 900%;
+        outline: none;
+    }
+}
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    cursor: pointer;
+    max-width: 32px;
+}
+@media (max-width: 991px) {
+    header {
+      padding: 20px 50px;
+      flex-direction: column;
+    }
+    .navigation {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+    .banner {
+      padding: 100px 50px;
+      .play {
+        left: 50px;
+        font-size: 1em;
+      }
+    }
+    .play img {
+      margin-right: 10px;
+      max-width: 40px;
+    }
+    .trailer video {
+      max-width: 90%;
+    }
+  }
+  @media (max-width: 600px) {
+    header {
+      padding: 20px;
+    }
+    .search {
+      position: relative;
+      width: calc(100% - 20px);
+      height: 40px;
+    }
+    .banner {
+      padding: 220px 20px 120px;
+      .play {
+        left: 20px;
+        font-size: 1em;
+        bottom: 30px;
+      }
+    }
+  }
