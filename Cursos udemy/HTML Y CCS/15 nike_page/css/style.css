@@ -34,9 +34,11 @@ section header .toggle {
   background-position: center;
 }
 section .content {
+  max-width: 100%;
   position: relative;
   width: 100%;
   margin-top: 40px;
+  padding-bottom: 20%;
 }
 section .content .imgBx {
   position: relative;
@@ -139,5 +141,21 @@ section::before {
   }
   .sci li {
     margin: 0 10px;
+  }
+}
+@-webkit-keyframes animacionZapatilla {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+@keyframes animacionZapatilla {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
   }
 }/*# sourceMappingURL=style.css.map */
