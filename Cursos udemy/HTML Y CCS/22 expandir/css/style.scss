@@ -38,7 +38,7 @@ body{
                     label {
                         &::after{
                             content: '+';
-                            color: rgb(41, 94, 143);
+                            color: rgb(251, 251, 251);
                             transform: rotate(135deg);
                         }
                         h2{
@@ -62,7 +62,7 @@ body{
                     }
                     .content{
                         max-height: 100vh;
-                        transition: 1s;
+                        transition: 0.5s;
                         p {
                             color: white;
                         }
@@ -73,17 +73,16 @@ body{
         label{
             display: inline-block;
             display: flex;
-            justify-content: space-between;
+            margin-bottom: 0px;
             align-items: center;
-            padding: 20px;
             cursor: pointer;
-            position: relative;
-            z-index: 1;
             &::after{
                 content: '+';
                 color: #333;
+                position: absolute;
+                right: 20px;
                 font-size: 2em;
-                transition: .5s;
+                transition: transform 1s;
             }
             h2{
                 width: 40px;
@@ -95,11 +94,13 @@ body{
                 font-size: 1.25em;
                 border-radius: 5px;
                 font-weight: 500;
+                margin-right: 25px;
             }
             h3{
-                color: #333;
-                font-size: 1.25em;
+                position: relative;
                 font-weight: 500;
+                color: #333;
+                z-index: 10;
             }
         }
         &:hover{
@@ -123,9 +124,31 @@ body{
         &:nth-child(2){
             label{
                 h2{
-                    background: linear-gradient( 135deg, #f093fb 10%, #f5576c 100%);
+                    background: linear-gradient(135deg, #f093fb 10%, #e80120 100%);
                 }
             }
         }
+        &:nth-child(3){
+            label{
+                h2{
+                    background: linear-gradient(135deg, #a3fb93 10%, #427f04 100%);
+                }
+            }
+        }
+        &:nth-child(4){
+            label{
+                h2{
+                    background: linear-gradient(135deg, #93cafb 10%, #090057 100%);
+                }
+            }
+        }
+        &:nth-child(5){
+            label{
+                h2{
+                    background: linear-gradient(135deg, #f2fb93 10%, #687f04 100%);
+                }
+            }
+        }
+        
     }
 }

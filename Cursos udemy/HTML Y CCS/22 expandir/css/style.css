@@ -39,7 +39,7 @@ body {
 }
 .container .tab input:checked ~ label::after {
   content: "+";
-  color: rgb(41, 94, 143);
+  color: rgb(251, 251, 251);
   transform: rotate(135deg);
 }
 .container .tab input:checked ~ label h2 {
@@ -62,7 +62,7 @@ body {
 }
 .container .tab input:checked ~ .content {
   max-height: 100vh;
-  transition: 1s;
+  transition: 0.5s;
 }
 .container .tab input:checked ~ .content p {
   color: white;
@@ -70,18 +70,17 @@ body {
 .container .tab label {
   display: inline-block;
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 0px;
   align-items: center;
-  padding: 20px;
   cursor: pointer;
-  position: relative;
-  z-index: 1;
 }
 .container .tab label::after {
   content: "+";
   color: #333;
+  position: absolute;
+  right: 20px;
   font-size: 2em;
-  transition: 0.5s;
+  transition: transform 1s;
 }
 .container .tab label h2 {
   width: 40px;
@@ -93,11 +92,13 @@ body {
   font-size: 1.25em;
   border-radius: 5px;
   font-weight: 500;
+  margin-right: 25px;
 }
 .container .tab label h3 {
-  color: #333;
-  font-size: 1.25em;
+  position: relative;
   font-weight: 500;
+  color: #333;
+  z-index: 10;
 }
 .container .tab:hover label::after {
   color: rgb(41, 94, 143);
@@ -114,5 +115,14 @@ body {
   line-height: 1.5;
 }
 .container .tab:nth-child(2) label h2 {
-  background: linear-gradient(135deg, #f093fb 10%, #f5576c 100%);
+  background: linear-gradient(135deg, #f093fb 10%, #e80120 100%);
+}
+.container .tab:nth-child(3) label h2 {
+  background: linear-gradient(135deg, #a3fb93 10%, #427f04 100%);
+}
+.container .tab:nth-child(4) label h2 {
+  background: linear-gradient(135deg, #93cafb 10%, #090057 100%);
+}
+.container .tab:nth-child(5) label h2 {
+  background: linear-gradient(135deg, #f2fb93 10%, #687f04 100%);
 }/*# sourceMappingURL=style.css.map */
