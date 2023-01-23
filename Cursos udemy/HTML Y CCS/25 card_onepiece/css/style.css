@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body:before {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(32, 8, 60) 20%, transparent);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 430px;
+  background: #000;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  transition: all 0.3s;
+  z-index: 100;
+}
+.card:hover {
+  box-shadow: 0 0 50px #273234;
+}
+.card:hover .poster:before {
+  bottom: 0;
+}
+.card:hover .poster img {
+  filter: blur(4px);
+  transform: translateY(-60px);
+}
+.card:hover .details {
+  bottom: 100px;
+}
+.card .poster {
+  position: relative;
+  overflow: hidden;
+}
+.card .poster:before {
+  content: "";
+  position: absolute;
+  bottom: -150px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 70%, transparent);
+  transition: 0.5s;
+  z-index: 1;
+}
+.card .poster img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  transition: 0.5s;
+}
+.card .poster img::before {
+  content: "best anime";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 70%, transparent);
+  transition: 0.5s;
+  z-index: 100;
+}
+.card .details {
+  position: absolute;
+  padding: 15px;
+  width: 100%;
+  height: 85%;
+  bottom: -130px;
+  left: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: 2;
+}
+.card .details .imgcontent {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: aliceblue;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+}
+.card .details .imgcontent img {
+  width: 70%;
+}
+.card .details .imgcontent span {
+  align-items: center;
+  font-size: 15px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.card .details .rating {
+  position: relative;
+  padding: 5px 0;
+}
+.card .details .rating .fas {
+  color: #f1c40f;
+  margin-right: 2px;
+  font-size: 16px;
+}
+.card .details .rating span {
+  color: #fff;
+  font-size: 14px;
+}
+.card .details .tags {
+  position: relative;
+  margin-top: 11px;
+}
+.card .details .tags span {
+  padding: 2px 5px;
+  margin-right: 2px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+}
+.card .details .tags .anime {
+  background: #3498db;
+}
+.card .details .tags .piratas {
+  background: #e74c3c;
+}
+.card .details .info {
+  color: #fff;
+}
+.card .details .info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.card .details .cast {
+  position: relative;
+}
+.card .details .cast h4 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.card .details .cast ul {
+  margin: 10 px 0 0;
+  padding: 0;
+  display: flex;
+}
+.card .details .cast ul li {
+  list-style: none;
+  width: 35px;
+  height: 35px;
+}
+.card .details .cast ul li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5px;
+}/*# sourceMappingURL=style.css.map */

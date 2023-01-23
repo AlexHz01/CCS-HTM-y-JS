@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    &:before{
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(32, 8, 60) 20%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+    }
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 430px;
+    background: #000;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s;
+    z-index: 100;
+    &:hover{
+        box-shadow: 0 0 50px #273234;
+        .poster{
+            &:before{
+                bottom: 0;
+            }
+            img{
+                filter: blur(4px);
+                transform: translateY(-60px);
+            }
+        }
+        .details{
+            bottom: 100px;
+        }
+    }
+    .poster{
+        position: relative;
+        overflow: hidden;
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: -150px;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(0deg, rgb(0, 0, 0) 70%, transparent);
+          transition: 0.5s;
+          z-index: 1;
+        }
+        img {
+          object-fit: cover;
+          width: 100%;
+          transition: 0.5s;
+          &::before {
+            content: "best anime";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgb(0, 0, 0) 70%, transparent);
+            transition: 0.5s;
+            z-index: 100;
+          }
+        }
+      }
+    .details{
+        position: absolute;
+        padding: 15px;
+        width: 100%;
+        height: 85%;
+        bottom: -130px;
+        left: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+        z-index: 2;
+        .imgcontent{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            font-size: 20px;
+            img{
+                width:70%;
+            }
+            span{
+                align-items: center;
+                font-size: 15px;
+                color: #fff;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .rating{
+            position: relative;
+            padding: 5px 0;
+            .fas{
+                color: #f1c40f;
+                margin-right: 2px;
+                font-size: 16px;
+            }
+            span{
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+        .tags{
+            position: relative;
+            margin-top: 11px;
+            span{
+                padding: 2px 5px;
+                margin-right: 2px;
+                color: #fff;
+                display: inline-block;
+                border-radius: 4px;
+            }
+            .anime{
+                background: #3498db;
+            }
+            .piratas{
+                background: #e74c3c;
+            }
+
+        }
+        .info{
+            color: #fff;
+            p{
+                margin: 5px 0;
+                font-size: 14px;
+            }
+        }
+        .cast{
+            position: relative;
+            h4{
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+            ul{
+                margin: 10 px 0 0;
+                padding: 0;
+                display: flex;
+                li{
+                    list-style: none;
+                    width: 35px;
+                    height: 35px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
