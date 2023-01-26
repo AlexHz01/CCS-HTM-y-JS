@@ -14,7 +14,7 @@ buttons.forEach((item) => {
         display.innerText = eval(display.innerText);
     }
     else if (display.innerText == "" && item.id == "equal"){
-        display.innerText = "Null";
+        display.innerText = "";
         setTimeout(() => (display.innerText = ""), 2000);
     }
     else {
@@ -22,3 +22,14 @@ buttons.forEach((item) => {
     }
  };
 });
+
+
+const themeToggleBtn = document.querySelector(".theme-toggler");
+const calculator = document.querySelector(".calculator");
+
+let isDark = true;
+themeToggleBtn.onclick=()=>{
+    calculator.classList.toggle("dark");
+    themeToggleBtn.classList.toggle("active");
+    isDark = !isDark;
+}
