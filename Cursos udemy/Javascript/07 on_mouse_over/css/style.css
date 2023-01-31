@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(../img/bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.container .thum {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.container .thum li {
+  list-style: none;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.container .thum li img {
+  width: 80%;
+  transition: 0.5s;
+}
+.container .thum li img:hover {
+  transform: scale(1.2);
+  transform: rotate(-35deg);
+}
+.container .imgBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 60px 20px;
+  width: 350px;
+  height: 100%;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.container .imgBox h2 {
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+.container .imgBox img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.container .imgBox img:hover {
+  transform: scale(1.1) rotate(-15deg) translateX(20px);
+}
+.container .size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+.container .size li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container .size li:hover {
+  background: #fff;
+  color: #000;
+}
+.container .btn {
+  position: absolute;
+  bottom: -20px;
+  text-decoration: none;
+  color: rgb(185, 141, 141);
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  display: inline-block;
+  background: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 5px 20px;
+  transition: 0.5ms;
+}
+.container .btn:hover {
+  color: #000;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=style.css.map */
