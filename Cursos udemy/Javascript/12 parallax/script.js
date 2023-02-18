@@ -1,5 +1,5 @@
 
-let scene=document.getElementById('imagenes');
+let position=document.getElementById('position');
 let text = document.getElementById('text');
-let parallaxInstanceScene= new Parallax(imagenes);
+let parallaxInstanceScene= new Parallax(position);
 let parallaxInstanceText= new Parallax(text);

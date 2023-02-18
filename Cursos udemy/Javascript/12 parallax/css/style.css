@@ -19,14 +19,18 @@
   background: radial-gradient(#9cdcff, #1cafff);
 }
 .banner .container #scene {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 100%;
 }
 .banner .container #scene #text {
   display: flex !important;
+  align-items: center;
+  justify-content: center;
   position: relative;
   color: #fff;
   font-size: 14vw;
@@ -37,25 +41,102 @@
   display: inline-block;
   text-shadow: 1px 1px 0 #e1e1e1, 2px 2px 0 #e1e1e1, 3px 3px 0 #e1e1e1, 4px 4px 0 #e1e1e1, 5px 5px 0 #e1e1e1, 6px 6px 0 #e1e1e1, 7px 7px 0 #e1e1e1, 8px 8px 0 #e1e1e1, 25px 35px 0px rgba(0, 0, 0, 0.1);
 }
-.banner .container #scene .layer {
+.banner .container #scene #imagenes {
   position: absolute;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
+}
+.banner .container #scene #imagenes #position {
+  position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
-.banner .container #scene .layer:nth-child(5) {
+.banner .container #scene #imagenes #position .layer_1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 50px;
   z-index: 1;
 }
-.banner .container #scene .layer img {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.banner .container #scene #imagenes #position .layer_1 img {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 20%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.banner .container #scene .layer.z {
-  z-index: 101;
+.banner .container #scene #imagenes #position .layer_2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 50px;
+  z-index: 1;
+}
+.banner .container #scene #imagenes #position .layer_2 img {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .container #scene #imagenes #position .layer_3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 50px;
+  z-index: 1;
+}
+.banner .container #scene #imagenes #position .layer_3 img {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .container #scene #imagenes #position .layer_4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 50px;
+  z-index: 1;
+}
+.banner .container #scene #imagenes #position .layer_4 img {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 65%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .container #scene #imagenes #position .layer_5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 50px;
+  z-index: 1;
+}
+.banner .container #scene #imagenes #position .layer_5 img {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
