@@ -56,10 +56,8 @@ section .box .cuadrado {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background: rgba(228, 8, 209, 0.1);
-  -webkit-animation: animate 10s linear infinite;
-          animation: animate 10s linear infinite;
-  -webkit-animation-delay: calc(-1s * var(--i));
-          animation-delay: calc(-1s * var(--i));
+  animation: animate 10s linear infinite;
+  animation-delay: calc(-1s * var(--i));
 }
 section .box .cuadrado:nth-child(1) {
   top: -50px;
@@ -160,9 +158,6 @@ section .box .container .form .inputbox input:focus {
 section .box .container .form .inputbox input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-section .box .container .form .inputbox input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
 section .box .container .form .inputbox input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -199,15 +194,6 @@ section .box .container .form .olvidar a {
 }
 section .box .container .form .olvidar a:hover {
   text-decoration: underline;
-}
-
-@-webkit-keyframes animate {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-500px) rotate(360deg);
-  }
 }
 
 @keyframes animate {

@@ -48,8 +48,7 @@ section .content .imgBx {
 }
 section .content .imgBx img {
   max-width: 100%;
-  -webkit-animation: animacionZapatilla 3.3s linear infinite;
-          animation: animacionZapatilla 3.3s linear infinite;
+  animation: animacionZapatilla 3.3s linear infinite;
 }
 section .content .text {
   max-width: 700px;
@@ -141,14 +140,6 @@ section::before {
   }
   .sci li {
     margin: 0 10px;
-  }
-}
-@-webkit-keyframes animacionZapatilla {
-  0%, 100% {
-    transform: translateY(-300px);
-  }
-  50% {
-    transform: translateY(20px);
   }
 }
 @keyframes animacionZapatilla {

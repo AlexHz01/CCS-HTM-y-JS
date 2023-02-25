@@ -37,20 +37,17 @@ section .ondas span {
 section .ondas span:nth-child(1) {
   border-radius: 45%;
   background: rgb(20, 20, 20);
-  -webkit-animation: animate 5s linear infinite;
-          animation: animate 5s linear infinite;
+  animation: animate 5s linear infinite;
 }
 section .ondas span:nth-child(2) {
   border-radius: 40%;
   background: rgba(20, 20, 20, 0.5);
-  -webkit-animation: animate 10s linear infinite;
-          animation: animate 10s linear infinite;
+  animation: animate 10s linear infinite;
 }
 section .ondas span:nth-child(3) {
   border-radius: 42.5%;
   background: rgba(20, 20, 20, 0.5);
-  -webkit-animation: animate 15s linear infinite;
-          animation: animate 15s linear infinite;
+  animation: animate 15s linear infinite;
 }
 section .content {
   position: relative;
@@ -59,15 +56,6 @@ section .content {
   text-align: center;
   color: aliceblue;
   z-index: 1000;
-}
-
-@-webkit-keyframes animate {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
 }
 
 @keyframes animate {
