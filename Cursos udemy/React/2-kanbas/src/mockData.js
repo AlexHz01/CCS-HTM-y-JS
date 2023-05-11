@@ -1,6 +1,6 @@
 import{ v4 as uuidv4 } from 'uuid';
 
-const mockData = [
+export const mockData = [
     {
         id: uuidv4(),
         title: '📕 Por hacer',
@@ -21,7 +21,7 @@ const mockData = [
     },
     {
         id: uuidv4(),
-        title: '📗 Terminadas',
+        title: '✒️ En proceso',
         tasks: [
             {
                 id: uuidv4(),
@@ -34,6 +34,25 @@ const mockData = [
             {
                 id: uuidv4(),
                 title: '📝 Tarea 6',
+            }
+        ]
+    },
+    
+    {
+        id: uuidv4(),
+        title: '📗 Terminadas',
+        tasks: [
+            {
+                id: uuidv4(),
+                title: '📝 Tarea 7',
+            },
+            {
+                id: uuidv4(),
+                title: '📝 Tarea 8',
+            },
+            {
+                id: uuidv4(),
+                title: '📝 Tarea 9',
             }
         ]
     }
